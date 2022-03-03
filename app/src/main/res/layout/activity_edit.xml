@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <ImageView
+        android:id="@+id/ivHeader"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/header_manga" />
+
+    <!-- INPUT TITULO -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTitulo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Titulo"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+
+        app:boxCornerRadiusTopStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivHeader"
+        app:layout_constraintVertical_bias="0.272"
+        app:startIconDrawable="@drawable/ic_book">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--*********************************************************-->
+
+    <!-- INPUT GENERO -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilGender"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:boxCornerRadiusTopStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivHeader"
+        app:layout_constraintVertical_bias="0.40"
+        app:startIconDrawable="@drawable/ic_manga">
+
+        <AutoCompleteTextView
+            android:id="@+id/tietGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:hint="Seleccione un genero"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--*********************************************************-->
+
+    <!-- INPUT CREADOR -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCreator"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Creador"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+
+        app:boxCornerRadiusTopStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivHeader"
+        app:layout_constraintVertical_bias="0.60"
+        app:startIconDrawable="@drawable/ic_creator">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietCreator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--*********************************************************-->
+
+
+    <!-- Boton -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="click"
+        android:text="Actualizar"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivHeader"
+        app:layout_constraintVertical_bias="0.866"></com.google.android.material.button.MaterialButton>
+
+    <!--*********************************************************-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

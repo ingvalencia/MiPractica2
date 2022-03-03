@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MiPractica2</string>
+
+    <string-array name="manga_generos">
+        <item>Acción</item>
+        <item>Aventura</item>
+        <item>Drama</item>
+        <item>Suspenso</item>
+    </string-array>
+
+</resources>
